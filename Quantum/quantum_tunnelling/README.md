@@ -9,14 +9,14 @@ The project starts with the one-dimensional time-independent case, before discus
 - Visualisation of the quantised bound-states and corresponding eigenstates
 - Calculation of probability densities and the probability of an eigenstate existing outside the well
 - Comparison of numerical wavefunction tails with the theoretical exponential decay
-  \[
+  $$
   |\phi(x)| \propto e^{-\kappa d},
   \qquad
   \kappa = \frac{\sqrt{2m(V_0-E)}}{\hbar}
-  \]
+  $$
 - Time evolution of stationary states and two-state superpositions, alongside the probability distrubution as a function of position and time
 - Interactive 3D probability-density isosurfaces with adjustable quantum numbers
-- 3D energy versus exterior-probability plot, distinguishing states below and above the chosen \(V_0\) threshold
+- 3D energy versus exterior-probability plot, distinguishing states below and above the chosen $V_0$ threshold
 
 ## Project structure
 
@@ -34,33 +34,33 @@ physical_systems/
 
 For the 1D finite well,
 
-\[
+$$
 V(x)=
 \begin{cases}
 0, & |x|<a, \\
 V_0, & |x|\geq a.
 \end{cases}
-\]
+$$
 
-Bound states satisfy \(E<V_0\). In classical mechanics, the particle cannot exist outside the well, since it would have Kinetic Energy $ T = E - V_0 < 0 $, but we see that in quantum mechanics we have an extension into the forbidden region with exponential decay.
+Bound states satisfy $E<V_0$. In classical mechanics, the particle cannot exist outside the well, since it would have Kinetic Energy $T = E - V_0 < 0$, but we see that in quantum mechanics we have an extension into the forbidden region with exponential decay.
 
 For the 3D numerical extension, the project uses a separable potential:
 
-\[
+$$
 V(x,y,z)=V_x(x)+V_y(y)+V_z(z).
-\]
+$$
 
 This gives product-state solutions:
 
-\[
+$$
 \phi_{n_x,n_y,n_z}(x,y,z)=\phi_{n_x}(x)\phi_{n_y}(y)\phi_{n_z}(z),
-\]
+$$
 
 with total energy
 
-\[
+$$
 E_{n_x,n_y,n_z}=E_{n_x}^{(x)}+E_{n_y}^{(y)}+E_{n_z}^{(z)}.
-\]
+$$
 
 ## Key observations
 
@@ -73,6 +73,6 @@ E_{n_x,n_y,n_z}=E_{n_x}^{(x)}+E_{n_y}^{(y)}+E_{n_z}^{(z)}.
 
 ## Limitations
 
-- The calculations use dimensionless units, with \(\hbar=m=1\).
+- The calculations use dimensionless units, with $\hbar=m=1$.
 - The numerical domain is finite, so the exponentially decaying tails are approximated on a finite grid.
 - The 3D solver uses a separable approximation rather than solving the full non-separable rectangular finite-well problem directly.
