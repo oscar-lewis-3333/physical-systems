@@ -35,11 +35,9 @@ physical_systems/
 For the 1D finite well,
 
 $$
-V(x)=
-\begin{cases}
-0, & |x|<a, \\
-V_0, & |x|\geq a.
-\end{cases}
+V(x)=0 \quad \text{if } |x|<a,
+\qquad
+V(x)=V_0 \quad \text{if } |x|\geq a.
 $$
 
 Bound states satisfy $E<V_0$. In classical mechanics, the particle cannot exist outside the well, since it would have Kinetic Energy $T = E - V_0 < 0$, but we see that in quantum mechanics we have an extension into the forbidden region with exponential decay.
