@@ -1,6 +1,6 @@
-# Computational Mathematics and Physical Systems
+# Physical Systems
 
-A computational portfolio combining derivations, numerical approximation and scientific visualisation to assist intuition. It is organised into three largely distinct sections—**numerical analysis**, **non-quantum physical systems** and **quantum systems**—which can be explored separately.
+A portfolio combining derivations, numerical approximation and visualisation to assist intuition to otherwise complex topics. It is organised into three largely distinct sections, **numerical analysis**, **non-quantum physical systems** and **quantum systems**, which can be explored separately.
 
 [![Render of a bead moving on a rotating hoop](non_quantum_systems/bead_on_rotating_hoop/media/bead_on_rotating_hoop.gif)](non_quantum_systems/bead_on_rotating_hoop/)
 
