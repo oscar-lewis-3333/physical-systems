@@ -1,4 +1,4 @@
-from physical_systems.Quantum.quantum_tunnelling.solving import real_time_evolved_1d, potential_well_1d, probability_outside_1d, superposition_prob, solve_3d_well, compute_3d_state_seperable
+from solving_tunneling import real_time_evolved_1d, potential_well_1d, probability_outside_1d, superposition_prob, solve_3d_well, compute_3d_state_seperable
 import ipywidgets as widgets
 from IPython.display import display
 import numpy as np
