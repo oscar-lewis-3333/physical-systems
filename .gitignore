@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .venv/
+#unfinished
+quantum_systems/harmonic_oscillator
