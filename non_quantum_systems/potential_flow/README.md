@@ -18,17 +18,17 @@ Because viscosity is neglected, the model predicts zero drag. This is known as d
 
 ## Model
 
-For a velocity field \(\mathbf{u}=(u,v)\), by definition, incompressibility and irrotationality give:
+For a velocity field $\mathbf{u}=(u,v)$, by definition, incompressibility and irrotationality give:
 
-\[
+$$
 \nabla\cdot\mathbf{u}=0,
 \qquad
 \nabla\times\mathbf{u}=\mathbf{0}.
-\]
+$$
 
-The velocity potential \(\phi\) and stream function \(\psi\) satisfy
+The velocity potential $\phi$ and stream function $\psi$ satisfy
 
-\[
+$$
 \mathbf{u}=\nabla\phi,
 \qquad
 \mathbf{u}=
@@ -36,17 +36,17 @@ The velocity potential \(\phi\) and stream function \(\psi\) satisfy
 \frac{\partial\psi}{\partial y},
 -\frac{\partial\psi}{\partial x}
 \right),
-\]
+$$
 
 hence both satisfy the Laplace equation. We combine them as follows to get the so-called 'complex potential':
 
-\[
+$$
 w(z)=\phi(x,y)+i\psi(x,y),
 \qquad
 \frac{dw}{dz}=u-iv.
-\]
+$$
 
-Streamlines are contours of \(\psi\), and equipotential surfaces are contours of \(\phi\). Cauchy-Riemann gives that these are orthogonal to one another
+Streamlines are contours of $\psi$, and equipotential surfaces are contours of $\phi$. Cauchy-Riemann gives that these are orthogonal to one another
 
 ## Elementary flows and superposition
 
@@ -54,59 +54,59 @@ The notebook derives, plots and gives intuition for the complex potentials for u
 
 Specifically, combining a uniform flow and a dipole gives
 
-\[
+$$
 w(z)=U\left(z+\frac{a^2}{z}\right),
-\]
+$$
 
-which describes potential flow around a circular cylinder of radius \(a\). The circle \(r=a\) is a streamline and the no-penetration boundary condition is satisfied.
+which describes potential flow around a circular cylinder of radius $a$. The circle $r=a$ is a streamline and the no-penetration boundary condition is satisfied.
 
 ## Pressure and drag
 
 On the cylinder surface, the radial velocity vanishes and the velocity in the angular direction is given by:
 
-\[
+$$
 u_r(a,\theta)=0,
 \qquad
 u_\theta(a,\theta)=-2U\sin\theta.
-\]
+$$
 
 Applying Bernoulli's equation/principle gives the surface pressure coefficient
 
-\[
+$$
 C_p(\theta)
 =
 \frac{p(a,\theta)-p_\infty}{\tfrac12\rho U^2}
 =1-4\sin^2\theta.
-\]
+$$
 
 The pressure distribution is symmetric in both vertical and horizontal directions, and hence produces zero net drag or lift. The lift is covered below. The drag effect is known as d'Alembert's paradox, and is broken by considering a small boundary layer near the surface where the flow is viscous. This is not covered here.
 
 ## Circulation and lift
 
-Adding a point vortex with circulation \(\Gamma\) at the centre of the cylinder gives the new complex potential:
+Adding a point vortex with circulation $\Gamma$ at the centre of the cylinder gives the new complex potential:
 
-\[
+$$
 w(z)
 =
 U\left(z+\frac{a^2}{z}\right)
 -\frac{i\Gamma}{2\pi}\log z.
-\]
+$$
 
 The cylinder boundary remains a streamline (still constant), but its surface velocity becomes
 
-\[
+$$
 u_\theta(a,\theta)
 =
 -2U\sin\theta+\frac{\Gamma}{2\pi a}.
-\]
+$$
 
 The circulation moves the stagnation points and creates a vertical pressure gradient, leading to a force which depends on the sign of the circulation. Integrating the 'pressure force' around the surface gives:
 
-\[
+$$
 D'=0,
 \qquad
 L'=-\rho U\Gamma.
-\]
+$$
 
 Where these forces are per unit length. This is the Kutta-Joukowski lift relation known as the Magnus effect. Negative circulation gives upward lift, while positive circulation gives downward 'lift'.
 
