@@ -29,12 +29,7 @@ $$
 The resulting equation of motion (using Euler-Lagrange) is:
 
 $$
-\ddot{\theta}
-=
-\sin\theta
-\left(
-\Omega^2\cos\theta-\frac{g}{R}
-\right).
+\ddot{\theta} = \sin\theta \left(\Omega^2\cos\theta-\frac{g}{R}\right).
 $$
 
 Because this equation is a nonlinear ODE, its trajectories are calculated numerically using SciPy's `solve_ivp`.
@@ -58,9 +53,7 @@ $$
 - For $\lambda>1$, the bottom equilibrium becomes unstable and two stable equilibria appear:
 
 $$
-\theta_e
-=
-\pm\cos^{-1}\left(\frac{1}{\lambda^2}\right).
+\theta_e = \pm\cos^{-1}\left(\frac{1}{\lambda^2}\right).
 $$
 
 This bifurcation is plotted in the notebook. The equilibrium at $\theta=\pi$ is not plotted, but remains unstable for every value of $\Omega$.
@@ -70,20 +63,13 @@ This bifurcation is plotted in the notebook. The equilibrium at $\theta=\pi$ is 
 The conserved reduced energy is:
 
 $$
-E_{\mathrm{eff}}
-=
-\frac12mR^2\dot{\theta}^2
--\frac12mR^2\Omega^2\sin^2\theta
--mgR\cos\theta.
+E_{\mathrm{eff}} = \frac12mR^2\dot{\theta}^2 -\frac12mR^2\Omega^2\sin^2\theta -mgR\cos\theta 
 $$
 
 The effective potential is therefore:
 
 $$
-U_{\mathrm{eff}}(\theta)
-=
--\frac12mR^2\Omega^2\sin^2\theta
--mgR\cos\theta+C.
+U_{\mathrm{eff}}(\theta) = -\frac12mR^2\Omega^2\sin^2\theta -mgR\cos\theta+C
 $$
 
 The project compares the numerical energy against its initial value to check the accuracy of the integration. It also uses the effective potential to identify allowed regions, equilibrium points and turning points.
@@ -93,19 +79,13 @@ The project compares the numerical energy against its initial value to check the
 Linearising around the stable equilibrium branches gives the dimensionless frequencies
 
 $$
-\frac{\omega_-}{\Omega_c}
-=
-\sqrt{1-\lambda^2},
-\qquad \lambda<1,
+\frac{\omega_-}{\Omega_c} = \sqrt{1-\lambda^2}, \qquad \lambda<1, 
 $$
 
 and
 
 $$
-\frac{\omega_+}{\Omega_c}
-=
-\sqrt{\lambda^2-\lambda^{-2}},
-\qquad \lambda>1.
+\frac{\omega_+}{\Omega_c} = \sqrt{\lambda^2-\lambda^{-2}}, \qquad \lambda>1.
 $$
 
 Both frequencies approach zero at the bifurcation, producing a critical slowing down effect which is visible on the trajectory plot at $\lambda=1$
